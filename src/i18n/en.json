@@ -1,0 +1,120 @@
+{
+  "app": {
+    "name": "PDF-ido",
+    "tagline": "Professional PDF Editor"
+  },
+  "actions": {
+    "openFile": "Open File",
+    "save": "Save",
+    "saveAs": "Save As",
+    "export": "Export",
+    "merge": "Merge PDFs",
+    "split": "Split PDF",
+    "deletePages": "Delete Pages",
+    "rotateCW": "Rotate Clockwise",
+    "rotateCCW": "Rotate Counter-Clockwise",
+    "compress": "Compress",
+    "reorder": "Reorder Pages",
+    "crop": "Crop Page",
+    "duplicate": "Duplicate Page",
+    "addBlankPage": "Add Blank Page",
+    "addText": "Add Text",
+    "addImage": "Add Image",
+    "addSignature": "Add Signature",
+    "undo": "Undo",
+    "redo": "Redo",
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out",
+    "fitWidth": "Fit to Width",
+    "fitPage": "Fit to Page",
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "apply": "Apply",
+    "ok": "OK"
+  },
+  "viewer": {
+    "noDocument": "Drop a PDF here or click Open to get started",
+    "page": "Page",
+    "of": "of",
+    "loading": "Loading...",
+    "rendering": "Rendering page..."
+  },
+  "sidebar": {
+    "pages": "Pages",
+    "thumbnails": "Thumbnails"
+  },
+  "merge": {
+    "title": "Merge PDFs",
+    "description": "Combine multiple PDF files into one",
+    "addFiles": "Add Files",
+    "dragToReorder": "Drag to reorder",
+    "mergeButton": "Merge",
+    "result": "Merged PDF"
+  },
+  "split": {
+    "title": "Split PDF",
+    "description": "Split this document into multiple files",
+    "everyPage": "Every page as separate file",
+    "byRange": "By page range",
+    "addRange": "Add Range",
+    "from": "From",
+    "to": "To",
+    "name": "File name",
+    "splitButton": "Split"
+  },
+  "compress": {
+    "title": "Compress PDF",
+    "description": "Reduce file size",
+    "quality": "Quality",
+    "low": "Low (smaller file)",
+    "medium": "Medium (balanced)",
+    "high": "High (better quality)",
+    "originalSize": "Original size",
+    "estimatedSize": "Estimated size",
+    "compressButton": "Compress"
+  },
+  "addText": {
+    "title": "Add Text",
+    "placeholder": "Type your text here...",
+    "fontSize": "Font Size",
+    "fontFamily": "Font",
+    "color": "Color",
+    "opacity": "Opacity"
+  },
+  "signature": {
+    "title": "Add Signature",
+    "draw": "Draw",
+    "type": "Type",
+    "upload": "Upload Image",
+    "clear": "Clear",
+    "apply": "Apply Signature",
+    "placeholder": "Type your signature..."
+  },
+  "toast": {
+    "fileOpened": "File opened successfully",
+    "fileSaved": "File saved",
+    "exportDone": "Export complete",
+    "mergeDone": "PDFs merged successfully",
+    "splitDone": "PDF split successfully",
+    "compressDone": "PDF compressed",
+    "rotated": "Page rotated",
+    "deleted": "Pages deleted",
+    "duplicated": "Page duplicated",
+    "blankAdded": "Blank page added",
+    "error": "An error occurred",
+    "fileError": "Failed to open file",
+    "saveError": "Failed to save file",
+    "noPDF": "Please open a PDF first"
+  },
+  "keyboard": {
+    "title": "Keyboard Shortcuts",
+    "open": "Ctrl+O",
+    "save": "Ctrl+S",
+    "undo": "Ctrl+Z",
+    "redo": "Ctrl+Y",
+    "zoomIn": "Ctrl++",
+    "zoomOut": "Ctrl+-",
+    "fitPage": "Ctrl+0"
+  }
+}

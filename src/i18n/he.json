@@ -1,0 +1,120 @@
+{
+  "app": {
+    "name": "PDF-ido",
+    "tagline": "עורך PDF מקצועי"
+  },
+  "actions": {
+    "openFile": "פתיחת קובץ",
+    "save": "שמירה",
+    "saveAs": "שמירה בשם",
+    "export": "ייצוא",
+    "merge": "איחוד קבצי PDF",
+    "split": "פיצול PDF",
+    "deletePages": "מחיקת עמודים",
+    "rotateCW": "סיבוב בכיוון השעון",
+    "rotateCCW": "סיבוב נגד השעון",
+    "compress": "דחיסה",
+    "reorder": "שינוי סדר עמודים",
+    "crop": "חיתוך עמוד",
+    "duplicate": "שכפול עמוד",
+    "addBlankPage": "הוספת עמוד ריק",
+    "addText": "הוספת טקסט",
+    "addImage": "הוספת תמונה",
+    "addSignature": "הוספת חתימה",
+    "undo": "ביטול",
+    "redo": "חזרה",
+    "zoomIn": "הגדלה",
+    "zoomOut": "הקטנה",
+    "fitWidth": "התאמה לרוחב",
+    "fitPage": "התאמה לעמוד",
+    "close": "סגירה",
+    "cancel": "ביטול",
+    "confirm": "אישור",
+    "apply": "החל",
+    "ok": "אישור"
+  },
+  "viewer": {
+    "noDocument": "גרור קובץ PDF לכאן או לחץ על פתיחה",
+    "page": "עמוד",
+    "of": "מתוך",
+    "loading": "טוען...",
+    "rendering": "מרנדר עמוד..."
+  },
+  "sidebar": {
+    "pages": "עמודים",
+    "thumbnails": "תמונות ממוזערות"
+  },
+  "merge": {
+    "title": "איחוד קבצי PDF",
+    "description": "שלב מספר קבצי PDF לקובץ אחד",
+    "addFiles": "הוסף קבצים",
+    "dragToReorder": "גרור לשינוי סדר",
+    "mergeButton": "איחוד",
+    "result": "PDF משולב"
+  },
+  "split": {
+    "title": "פיצול PDF",
+    "description": "פצל את המסמך למספר קבצים",
+    "everyPage": "כל עמוד כקובץ נפרד",
+    "byRange": "לפי טווח עמודים",
+    "addRange": "הוסף טווח",
+    "from": "מעמוד",
+    "to": "עד עמוד",
+    "name": "שם קובץ",
+    "splitButton": "פיצול"
+  },
+  "compress": {
+    "title": "דחיסת PDF",
+    "description": "הקטן את גודל הקובץ",
+    "quality": "איכות",
+    "low": "נמוכה (קובץ קטן יותר)",
+    "medium": "בינונית (מאוזן)",
+    "high": "גבוהה (איכות טובה יותר)",
+    "originalSize": "גודל מקורי",
+    "estimatedSize": "גודל משוער",
+    "compressButton": "דחיסה"
+  },
+  "addText": {
+    "title": "הוספת טקסט",
+    "placeholder": "הקלד את הטקסט שלך...",
+    "fontSize": "גודל גופן",
+    "fontFamily": "גופן",
+    "color": "צבע",
+    "opacity": "שקיפות"
+  },
+  "signature": {
+    "title": "הוספת חתימה",
+    "draw": "ציור",
+    "type": "הקלדה",
+    "upload": "העלאת תמונה",
+    "clear": "נקה",
+    "apply": "החל חתימה",
+    "placeholder": "הקלד את חתימתך..."
+  },
+  "toast": {
+    "fileOpened": "הקובץ נפתח בהצלחה",
+    "fileSaved": "הקובץ נשמר",
+    "exportDone": "הייצוא הושלם",
+    "mergeDone": "קבצי PDF אוחדו בהצלחה",
+    "splitDone": "ה-PDF פוצל בהצלחה",
+    "compressDone": "ה-PDF נדחס",
+    "rotated": "העמוד סובב",
+    "deleted": "העמודים נמחקו",
+    "duplicated": "העמוד שוכפל",
+    "blankAdded": "עמוד ריק נוסף",
+    "error": "אירעה שגיאה",
+    "fileError": "פתיחת הקובץ נכשלה",
+    "saveError": "שמירת הקובץ נכשלה",
+    "noPDF": "אנא פתח קובץ PDF תחילה"
+  },
+  "keyboard": {
+    "title": "קיצורי מקלדת",
+    "open": "Ctrl+O",
+    "save": "Ctrl+S",
+    "undo": "Ctrl+Z",
+    "redo": "Ctrl+Y",
+    "zoomIn": "Ctrl++",
+    "zoomOut": "Ctrl+-",
+    "fitPage": "Ctrl+0"
+  }
+}
