@@ -4,6 +4,8 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  // GitHub Pages serves from /PDF-ido/ — must match the repo name exactly
+  base: process.env.GITHUB_ACTIONS ? '/PDF-ido/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
