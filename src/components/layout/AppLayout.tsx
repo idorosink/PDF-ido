@@ -6,7 +6,6 @@ import { useDocumentStore } from '@/store/documentStore'
 import { useUIStore } from '@/store/uiStore'
 import { ThumbnailSidebar } from '@/components/sidebar/ThumbnailSidebar'
 import { PDFViewer } from '@/components/viewer/PDFViewer'
-import { FloatingToolbar } from '@/components/toolbar/FloatingToolbar'
 import { ToastContainer } from '@/components/ui/Toast'
 import { MergeModal } from '@/components/modals/MergeModal'
 import { SplitModal } from '@/components/modals/SplitModal'
@@ -143,9 +142,6 @@ export function AppLayout() {
 
         {/* Center: PDF viewer */}
         <PDFViewer />
-
-        {/* Right: Floating toolbar */}
-        <FloatingToolbar />
       </div>
 
       {/* ── Modals ──────────────────────────────────────────────────────────── */}

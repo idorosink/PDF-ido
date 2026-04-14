@@ -6,6 +6,7 @@ import { PDFPage } from './PDFPage'
 import { AnnotationLayer } from './AnnotationLayer'
 import { DropZone } from '@/components/ui/DropZone'
 import { getPageDimensions } from '@/services/pdfRenderer'
+import { FloatingToolbar } from '@/components/toolbar/FloatingToolbar'
 
 const PAGE_GAP = 20   // px between pages in continuous mode
 const MIN_SCALE = 0.25
@@ -119,6 +120,7 @@ export function PDFViewer() {
       ref={containerRef}
       className="relative flex-1 overflow-hidden bg-gray-200 dark:bg-gray-950"
     >
+      <FloatingToolbar />
       <div
         ref={scrollRef}
         className="absolute inset-0 overflow-auto"
@@ -128,8 +130,8 @@ export function PDFViewer() {
           className={clsx(
             'flex min-h-full',
             viewMode === 'double'
-              ? 'flex-wrap justify-center gap-4 py-6 px-6'
-              : 'flex-col items-center py-6 px-6',
+              ? 'flex-wrap justify-center gap-4 pt-16 pb-6 px-6'
+              : 'flex-col items-center pt-16 pb-6 px-6',
           )}
           style={{ gap: viewMode !== 'double' ? PAGE_GAP : undefined }}
         >

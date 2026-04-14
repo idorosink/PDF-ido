@@ -20,14 +20,20 @@ export function usePDF() {
   /** Generate thumbnails for all pages of a document */
   const generateThumbnails = useCallback(
     async (docId: string, data: Uint8Array, pageCount: number) => {
-      for (let i = 0; i < pageCount; i++) {
-        try {
-          const thumb = await generateThumbnail(data, i + 1, 150)
-          docStore.setThumbnail(docId, i, thumb)
-        } catch (e) {
-          console.warn(`Thumbnail generation failed for page ${i + 1}:`, e)
+      const THUMB_CONCURRENCY = 3
+      let i = 0
+      async function worker() {
+        while (i < pageCount) {
+          const idx = i++
+          try {
+            const thumb = await generateThumbnail(data, idx + 1, 150)
+            docStore.setThumbnail(docId, idx, thumb)
+          } catch (e) {
+            console.warn(`Thumbnail generation failed for page ${idx + 1}:`, e)
+          }
         }
       }
+      await Promise.all(Array.from({ length: Math.min(THUMB_CONCURRENCY, pageCount) }, worker))
     },
     [docStore]
   )
@@ -83,9 +89,9 @@ export function usePDF() {
 
   /** Rotate selected or active pages */
   const rotatePages = useCallback(
-    async (direction: 'cw' | 'ccw') => {
+    async (direction: 'cw' | 'ccw' | '180') => {
       if (!activeDoc) { ui.addToast({ message: t('toast.noPDF'), type: 'warning' }); return }
-      const delta = direction === 'cw' ? 90 : -90
+      const delta: 90 | -90 | 180 = direction === 'cw' ? 90 : direction === 'ccw' ? -90 : 180
       const indices = docStore.selectedPageIndices.length > 0
         ? docStore.selectedPageIndices
         : [docStore.activePageIndex]

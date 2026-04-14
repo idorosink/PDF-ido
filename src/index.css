@@ -118,3 +118,45 @@ body {
 .electron-no-drag {
   -webkit-app-region: no-drag;
 }
+
+/* ── PDF Text Layer ─────────────────────────────────────────────────────────── */
+
+.pdf-text-layer {
+  pointer-events: auto;
+  line-height: 1;
+  user-select: text;
+  -webkit-user-select: text;
+  cursor: text;
+}
+
+.pdf-text-layer span,
+.pdf-text-layer br {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+  /* Prevent layout shifts */
+  will-change: transform;
+}
+
+.pdf-text-layer .markedContent {
+  top: 0;
+  height: 0;
+}
+
+.pdf-text-layer ::selection {
+  background: rgba(99, 102, 241, 0.25);
+  color: transparent;
+}
+
+.pdf-text-layer ::-moz-selection {
+  background: rgba(99, 102, 241, 0.25);
+  color: transparent;
+}
+
+/* Ensure canvas is non-selectable but text layer is */
+.pdf-text-layer ~ canvas,
+canvas + .pdf-text-layer {
+  pointer-events: none;
+}
